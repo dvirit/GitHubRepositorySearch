@@ -1,0 +1,18 @@
+﻿@model IEnumerable<GitHubRepositorySearch.Models.RepositoryItem>
+
+@{
+    ViewBag.Title = "Bookmarks";
+}
+
+<h2>Bookmarks</h2>
+
+<div>
+    @foreach (var item in Model)
+    {
+        <div id="@item.ID" class="result-item">
+            <span class="result-title">@item.Name</span>
+            <img src="@item.Owner.Avatar_Url" class="result-avatar">
+        </div>
+    }
+</div>
+
