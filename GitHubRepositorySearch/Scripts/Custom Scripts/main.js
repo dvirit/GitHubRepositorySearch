@@ -73,7 +73,7 @@ function searchByKeyword(keyword, page) {
 function loadMoreResults() {
     currentPage++;
     searchByKeyword(currentKeyword, currentPage);
-}loadBookmarks
+}
 
 // Saves a bookmark
 function saveBookmark(itemId) {
