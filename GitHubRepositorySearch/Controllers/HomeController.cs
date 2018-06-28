@@ -27,7 +27,7 @@ namespace GitHubRepositorySearch.Controllers
             var bookmarks = Session["bookmarks"] as Dictionary<string, string>;
 
             // Adds the new bookmark full Json result string to the bookmarks dictionary
-            bookmarks.Add(itemId, bookmarkItem.ToString());
+            bookmarks[itemId] = bookmarkItem.ToString();
         }
 
         // Saved bookmarks page
